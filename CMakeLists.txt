@@ -16,21 +16,21 @@ endfunction()
 
 add_subdirectory(shared)
 
-if (PSDK_GTAIII)
-  add_subdirectory(plugin_III)
-endif()
+#if (PSDK_GTAIII)
+#  add_subdirectory(plugin_III)
+#endif()
 
 if (PSDK_GTASA)
   add_subdirectory(plugin_sa)
 endif()
 
-if (PSDK_GTAVC)
-  add_subdirectory(plugin_vc)
-endif()
+#if (PSDK_GTAVC)
+#  add_subdirectory(plugin_vc)
+#endif()
 
-if (PSDK_EXAMPLES)
-  add_subdirectory(examples)
-endif()
+#if (PSDK_EXAMPLES)
+#  add_subdirectory(examples)
+#endif()
 
 if (PSDK_INSTALL)
   install(FILES "${PROJECT_SOURCE_DIR}/tools/cmake/plugin-sdk-config.cmake"
